@@ -35,28 +35,42 @@
     .btn:hover {
       background-color: #222;
     }
-    .btn:active {
-      box-shadow: 0 0;
-      background-color: #000;
-    }
-
   </style>
 
 </head>
 
 <body>
-
-  <button class="btn" type="button" onclick="navigate(1)"> <i class="fa-regular fa-star"></i> Here </button>
-  <button class="btn" type="button" onclick="navigate(2)"> <i class="fa-regular fa-star"></i> There </button>
+  <button class="btn" type="button" onclick="navigate(1)"> <i class="fa-regular fa-star"></i> Vision Board </button>
+  <button class="btn" type="button" onclick="navigate(2)"> <i class="fa-regular fa-star"></i> Goals Check-in </button>
+  <button class="btn" type="button" onclick="navigate(3)"> <i class="fa-regular fa-star"></i> Recipes </button>
+  <button class="btn" type="button" onclick="navigate(4)"> <i class="fa-regular fa-star"></i> Before & After </button>
+  <button class="btn" type="button" onclick="navigate(5)"> <i class="fa-regular fa-star"></i> Weight-in Tracker </button>
+  <button class="btn" type="button" onclick="navigate(6)"> <i class="fa-regular fa-star"></i> Period Tracker </button>
+  <button class="btn" type="button" onclick="navigate(7)"> <i class="fa-regular fa-star"></i> Reading List </button>
+  <button class="btn" type="button" onclick="navigate(8)"> <i class="fa-regular fa-star"></i> Watching List </button>
 
   <script>
     function navigate(num) {
-      if (num == 1) {
-         window.open("https://ravsul.github.io/notion/Buttons.html", '_self').focus();
-      }
-      if (num == 2) {
-         window.open("https://ravsul.github.io/notion", '_self').focus();
-      }
+      switch (num) {
+          case 1:
+           window.open("https://www.notion.so/Vision-board-7206f298484c4d5f8c31fcbd0772a03f", '_self').focus();
+          break;
+          case 2:
+           window.open("https://www.notion.so/Goals-check-in-b690ab72629e465d8a350e5fd3b9f98d", '_self').focus();
+          break;
+          case 3:
+           window.open("https://www.notion.so/Recipes-2a1b632daac642c5a3d0e5f7865e580d", '_self').focus();
+          break;
+          case 4:
+           window.open("https://www.notion.so/Before-After-9042bc4189fc402685464ed2ca87ce7a", '_self').focus();
+          break;
+          case 5:
+           window.open("https://www.notion.so/Weight-in-tracker-29f8f3446d9b4f9eb32a2bf24df1b90e", '_self').focus();
+          break;
+        default:
+          console.log(`Sorry, we are out of ${expr}.`);
+    }
+
     }
   </script>
 
