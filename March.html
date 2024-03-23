@@ -7,14 +7,23 @@
 
   <style>
     body {
-      width: 500px;
-      display: flex;
-      margin: 5px;
-      text-align: center;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: center;
+        width: 500px;
+        display: flex;
+        margin: 5px;
+        text-align: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
     }
+    div {
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        padding: 20px;
+        font-family: Lyon-Text, Georgia, ui-serif, serif;
+        font-weight: bold;
+        color: #55534e;
+      }
     
     button {
       background: none;
@@ -55,8 +64,10 @@
 </head>
 
 <body>
-  <h> March </h>
-  <button class="btn" type="button" onclick="navigate(1)"> <i class="fa-solid fa-images"></i> Calendar </button>
+  <div> March </div>
+  <button class="btn" type="button" onclick="navigate(1)"> 
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3m1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z"/></svg>
+    Calendar </button>
   <button class="btn" type="button" onclick="navigate(2)"> <i class="fa-solid fa-bullseye"></i> Goals <br> Check-in </button>
   <button class="btn" type="button" onclick="navigate(3)"> <i class="fa-solid fa-utensils"></i> Recipes </button>
   <button class="btn" type="button" onclick="navigate(4)"> <i class="fa-solid fa-camera"></i> Before & After </button>
