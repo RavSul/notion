@@ -7,10 +7,13 @@
 
   <style>
     body {
-      width: 450px;
-      display: block;
+      width: 500px;
+      display: flex;
       margin: 5px;
       text-align: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
     }
     
     button {
@@ -24,33 +27,26 @@
     }
 
     i {
-      padding-right: 2px;
-      top: 13px;
-      position: relative;
+      padding-right: 7px;
     }
-    i.fa-solid.fa-weight-scale {
-      top: 5px;
-    }
-    i.fa-solid.fa-bullseye {
-      top: 5px;
-    }
-    
     .btn {
       background-color: white;
-      text-align: center;
+      text-align: start;
       color: #55534e;
       font-family: Lyon-Text, Georgia, ui-serif, serif;
-      display: inline-grid;
+      display: flex;
       margin: 7px;
       border-radius: 5px;
-      padding: 10px;
+      padding-left: 10px;
       font-size: 12px;
-      width: 120px;
-      height: 80px;
+      width: 140px;
+      height: 60px;
       border: 1px solid #ddd;
-      align-content: stretch;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-content: center;      
     }
-
     .btn:hover {
       background-color: #f2f2f2;
     }
@@ -59,7 +55,8 @@
 </head>
 
 <body>
-  <button class="btn" type="button" onclick="navigate(1)"> <i class="fa-solid fa-images"></i> Vision Board </button>
+  <h> March </h>
+  <button class="btn" type="button" onclick="navigate(1)"> <i class="fa-solid fa-images"></i> Calendar </button>
   <button class="btn" type="button" onclick="navigate(2)"> <i class="fa-solid fa-bullseye"></i> Goals <br> Check-in </button>
   <button class="btn" type="button" onclick="navigate(3)"> <i class="fa-solid fa-utensils"></i> Recipes </button>
   <button class="btn" type="button" onclick="navigate(4)"> <i class="fa-solid fa-camera"></i> Before & After </button>
@@ -67,6 +64,8 @@
   <button class="btn" type="button" onclick="navigate(6)"> <i class="fa-solid fa-droplet"></i> Period Tracker </button>
   <button class="btn" type="button" onclick="navigate(7)"> <i class="fa-solid fa-book"></i> Reading List </button>
   <button class="btn" type="button" onclick="navigate(8)"> <i class="fa-solid fa-tv"></i> Watching List </button>
+  <button class="btn" type="button" onclick="navigate(9)"> <i class="fa-solid fa-tv"></i> Watching List </button>
+  <button class="btn" type="button" onclick="navigate(10)"> <i class="fa-solid fa-tv"></i> Watching List </button>
 
   <script>
     function navigate(num) {
